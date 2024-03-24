@@ -8,6 +8,7 @@
   {
     int result = Random.Shared.Next(0, 10) + intelligence;
 
+    // Make sure return value isn't higher than 20
     if (result > 20)
     {
       return 20;

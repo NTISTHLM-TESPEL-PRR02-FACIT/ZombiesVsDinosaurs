@@ -2,6 +2,7 @@
 List<Dinosaur> dinosaurs = new List<Dinosaur>();
 List<Zombie> zombies = new List<Zombie>();
 
+// Get number of dinos/zombies
 int num = -1;
 bool success = false;
 while (success == false)
@@ -17,6 +18,7 @@ while (success == false)
   }
 }
 
+// Create dinos & zombies
 for (int i = 0; i < num; i++)
 {
   Dinosaur dino = new Dinosaur();
@@ -25,6 +27,7 @@ for (int i = 0; i < num; i++)
   zombies.Add(zombie);
 }
 
+// Type out the number of dinos/zombies
 Console.WriteLine("Created " + dinosaurs.Count() + " dinosaurs.");
 Console.WriteLine("Created " + zombies.Count() + " zombies.");
 
